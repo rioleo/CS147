@@ -20,6 +20,8 @@
 	<form action="submit.php" method="get">
 	<p><label for="message">Message</label>
 		<input type="text" name="message" maxlength="140"></p>
+	<p><label for="password">Password</label>
+		<input type="password" name="password" maxlength="140"></p>
 	<p><label for="turnon">Turn on?</label>
 	
 		<input type="radio" id="on" name="turnon" value="on" checked>
@@ -32,9 +34,10 @@
 			<option value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
-		</select></p>
+		</select>
+	</p>
 		
-		<select name="country" data-placeholder="Choose a Country" class="chzn-select" style="width:350px;" tabindex="2">
+	<select name="country" data-placeholder="Choose a Country" class="chzn-select" style="width:350px;" tabindex="2">
                 <option value=""></option> 
                 <option value="United States">United States</option> 
                 <option value="United Kingdom">United Kingdom</option> 
@@ -279,7 +282,7 @@
                 <option value="Yemen">Yemen</option> 
                 <option value="Zambia">Zambia</option> 
                 <option value="Zimbabwe">Zimbabwe</option>
-              </select>
+        </select>
               
 		<input class="submit" type="submit" value="Send">
 	</form>
