@@ -1,0 +1,34 @@
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" id="style" href="blue/style.css" />
+
+	<!--[if lt IE 9]><script src="assets/js/fix.ie.js"></script><![endif]-->
+
+	<script type="text/javascript" src="assets/js/libs/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/jquery.ui.widget.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/libs/AudioPlayerV1.js"></script>
+	
+	<script src="assets/js/actions.js"></script>
+	
+	<script type="text/javascript">
+		$.fn.AudioPlayerV1.defaultOptions['data-fallback'] = 'assets/swf/AudioPlayerV1.swf';
+	</script>
+
+</head>
+<body>
+
+<h2>HTML5 audio player</h2>
+
+<p>This is a pretty neat audio player from Envato that has been stripped down for ease of use.</p>
+	
+	
+							<audio id="audio3" class="AudioPlayerV1" preload="none" width="360" data-controls-time="false">
+								<source src="http://envato.dasilveira.nl/html5-audioplayer-v1/mp3/track2.mp3" type="audio/mpeg" />
+								<source src="http://envato.dasilveira.nl/html5-audioplayer-v1/ogg/track2.ogg" type="audio/ogg" />
+							</audio>
+											
+</body>
+</html>
+

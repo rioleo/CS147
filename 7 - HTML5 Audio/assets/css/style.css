@@ -1,0 +1,434 @@
+@font-face {
+    font-family: 'FuturaCondensedMedium';
+    src: url('../font/futura-webfont.eot');
+    src: url('../font/futura-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/futura-webfont.woff') format('woff'),
+         url('../font/futura-webfont.ttf') format('truetype'),
+         url('../font/futura-webfont.svg#FuturaCondensedMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	background:#efe2d9;
+}
+
+header ul
+{
+	width:700px;
+	height:90px;
+	margin:0 auto;
+}
+
+header li
+{
+	float:left;
+	margin:15px 10px;
+}
+
+header a
+{
+	display:block;
+	
+	font-family:'Futura-CondensedMedium', 'FuturaCondensedMedium';
+	background:#86786F;
+	
+	width:120px;
+	padding:10px 0;
+	
+	text-align:center;
+	
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+}
+
+header a:hover
+{
+	background:#5C524B;
+}
+
+header .buy:hover
+{
+	background:#911f47;
+}
+
+header strong
+{
+	display:block;
+	font-weight:normal;
+	font-size:24px;
+	line-height:22px;
+	color:#fff;
+}
+
+header .buy
+{
+	background:#ce3167;
+	color:#fff;
+}
+
+header span
+{
+	display:block;
+	font-size:15px;
+	color:#aaa39e;
+}
+
+header .buy span
+{
+	color:#f399b8;
+}
+
+.wrapper
+{
+	width:800px;
+	margin:0 auto;
+}
+
+footer,
+section
+{
+	padding:20px 0;
+	background:#86786f url('../img/border.png') repeat-x;
+}
+
+footer,
+section.odd
+{
+	background:transparent url('../img/border.odd.png') repeat-x;
+}
+
+section h1
+{
+	width:800px;
+	height:134px;
+	margin:0 auto 10px auto;
+	padding:30px 0 0 0;
+	background: url('../img/logo.png') no-repeat center bottom;
+}
+
+.main
+{
+	background: url('../img/bg.png') no-repeat center 81px;
+}
+
+.main .AudioPlayerV1
+{
+	margin:0 auto 70px auto !important;
+}
+
+.AudioPlayerV1
+{
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.4);
+	-khtml-box-shadow:0 1px 3px rgba(0,0,0,0.4);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,0.4);
+	-o-box-shadow:0 1px 3px rgba(0,0,0,0.4);
+	box-shadow:0 1px 3px rgba(0,0,0,0.4);
+}
+
+footer h4,
+section h3,
+section h2
+{
+	display:block;
+	padding:30px 10px;
+	
+	font-family:'Futura-CondensedMedium', 'FuturaCondensedMedium';
+	font-weight:normal;
+	font-size:28px;
+	
+	color:#5c524b;
+	
+	-webkit-text-shadow:0 1px 0 #90857d;
+	-khtml-text-shadow:0 1px 0 #90857d;
+	-moz-text-shadow:0 1px 0 #90857d;
+	-o-text-shadow:0 1px 0 #90857d;
+	text-shadow:0 1px 0 #90857d;
+}
+
+
+footer h4,
+section.odd h3,
+section.odd h2
+{
+	-webkit-text-shadow:none;
+	-khtml-text-shadow:none;
+	-moz-text-shadow:none;
+	-o-text-shadow:none;
+	text-shadow:none;
+}
+
+footer h4,
+section h2
+{
+	text-align:center;
+}
+
+.list
+{
+	float:left;
+	width:400px;
+	margin:0 0 10px 0;
+}
+
+.list li
+{
+	background:url('../img/dot.png') no-repeat 20px center;
+	margin:0 0 20px 0;
+	padding:0 0 0 40px;
+}
+
+.demo strong,
+.list strong
+{
+	display:block;
+	font-size:15px;
+	margin:0 0 3px 0;
+	font-weight:normal;
+	color:#5c524b;
+}
+
+.list span
+{
+	display:block;
+	color:#86786f;
+}
+
+.demo li
+{
+	height:55px;
+}
+
+.demo strong
+{
+	background:url('../img/dot.white.png') no-repeat 20px center;
+	
+	display:inline;
+	font-size: 100%;
+	line-height:30px;
+	padding:0 0 0 40px;
+	color:#efe2d9;
+}
+
+.demo .AudioPlayerV1
+{
+	float:right !important;
+	margin:0 30px 0 0 !important;
+}
+
+.switcher,
+.styling
+{	
+	margin:40px 20px 20px 20px;
+	background:#71655d;
+	
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.switcher
+{
+	margin-top:0;
+}
+
+.switcher ul,
+.styling ul
+{
+	width:550px;
+	height:40px;
+	padding:20px 10px;
+	
+	margin:0 auto 0 auto;
+}
+
+.switcher ul
+{
+	width:750px;
+}
+
+.switcher ul li,
+.styling ul li
+{
+	display:block;
+	float:left;
+}
+
+.switcher button,
+.styling button
+{
+	display:block;
+	font-family:'Futura-CondensedMedium', 'FuturaCondensedMedium';
+	font-size:20px;
+	
+	color:#EFE2D9;
+	
+	outline:none;
+	border:none;
+	background:#86786f;
+	height:40px;
+	margin:0 10px;
+	width:90px;
+	
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.switcher button
+{
+	width:226px;
+	
+}
+
+.switcher button.active,
+.styling button.active
+{
+	background:#5C524B;
+}
+
+.switcher button span,
+.styling button span
+{
+	display:block;
+}
+
+section p
+{
+	color:#5c524b;
+	padding:0 20px 20px 20px;
+	line-height:22px;
+}
+
+section p b
+{
+	font-weight:bold;
+	color:#333;
+}
+
+section p a,
+section p a:active,
+section p a:visited
+{
+	color:#FF5E99;
+}
+
+section p a:hover
+{
+	color:#911f47;
+	text-decoration:underline;
+}
+
+section p strong
+{
+	background:#86786F;
+	color: #fff;
+	font-weight: normal;
+	padding: 1px 4px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+section p strong::-moz-selection
+{ color:#ffa8c6; }
+section p strong::selection
+{ color:#ffa8c6; }
+
+section br
+{
+	display:block;
+}
+
+section .img
+{
+	margin:0 20px 30px 20px;
+	overflow: hidden;
+	background:#fff;
+	
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+section .img::-moz-selection,
+section .img img::-moz-selection
+{ background:rgba(255, 94, 153, 0.8); }
+
+section .img::selection,
+section .img img::selection
+{ background:rgba(255, 94, 153, 0.4); }
+
+section .img img
+{
+	display: block;
+	margin: 0 auto;
+	border: none;
+	outline: none;
+}
+
+section table
+{
+	width:760px;
+	margin:0 20px 20px 20px;
+	color:#EFE2D9;
+	line-height:20px;
+}
+
+section table b
+{
+	font-weight:bold;
+}
+
+section tr
+{
+	border-bottom:solid 1px #6b6058;
+}
+
+section td,
+section th
+{
+	text-align:left;
+	padding:10px 0;
+}
+
+section td strong,
+section th strong
+{
+	background:#70625a;
+	color: #efe2d9;
+	font-weight: normal;
+	padding: 1px 4px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+section td strong::-moz-selection
+{ color:#ffa8c6; }
+section td strong::selection
+{ color:#ffa8c6; }
+
+
+section td strong
+{
+	background:#a09188;
+	color:#52463f;
+	font-weight: bold;
+}
+
