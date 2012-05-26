@@ -13,7 +13,7 @@ Covers authentication using a database. Provides wireframes for sessions.
 
 * 3 - Map
 
-Covers Google Maps and geolocation using a supported browser.
+Covers Google Maps and geolocation using a supported browser. May require Firefox instead of Chrome for local use (though everything is fine uploaded to a remote server).
 
 * 4 - Databases
 
@@ -25,4 +25,4 @@ Accompanies the vimeo video 31285445 and integrates Facebook's OAuth authenticat
 
 * 6 - Foursquare
 
-Provides a rudimentary framework for accesing the Venues platform on the Foursquare API using latitude and longitude. It does not require user authentication as the data isn't relevant to a specific user.
+Provides a rudimentary framework for accesing the Venues platform on the Foursquare API using latitude and longitude. It does not require user authentication as the data isn't relevant to a specific user. Includes an example of json_decode.
