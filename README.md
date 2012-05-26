@@ -22,3 +22,7 @@ A mock app that lets a user choose a movie and have it display automatically usi
 * 5 - Facebook
 
 Accompanies the vimeo video 31285445 and integrates Facebook's OAuth authentication into a sample webapp.
+
+* 6 - Foursquare
+
+Provides a rudimentary framework for accesing the Venues platform on the Foursquare API using latitude and longitude. It does not require user authentication as the data isn't relevant to a specific user.
