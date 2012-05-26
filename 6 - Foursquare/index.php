@@ -8,8 +8,8 @@ Register a new consumer at:
 https://foursquare.com/oauth/register
 */
 
-$client_id = 'LSDRW3S0FXLSO0NOJISZGLKVZVKYDIOZR2NLTFT1IDQS5ITK';
-$client_secret = 'XD5LGY1ZACHXOUJ1PJYCVGN134UDCEC3R3PI053FPWGDUIAI';
+$client_id = '';
+$client_secret = '';
 
 $latitude = $_GET["latitude"];
 $longitude = $_GET["longitude"];
