@@ -1,8 +1,8 @@
 <?php
-$host = "p41mysql141.secureserver.net";
-$user = "inwedayforum";
-$pass = "Alohario1005";
-$mysql_database = "inwedayforum";
+$host = "";
+$user = "";
+$pass = "";
+$mysql_database = "";
 
 $link = mysql_connect($host, $user, $pass);
 if (!$link) {

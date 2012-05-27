@@ -26,7 +26,3 @@ Accompanies the vimeo video 31285445 and integrates Facebook's OAuth authenticat
 * 6 - Foursquare
 
 Provides a rudimentary framework for accesing the Venues platform on the Foursquare API using latitude and longitude. It does not require user authentication as the data isn't relevant to a specific user. Includes an example of json_decode.
-
-* 7 - HTML5 Audio
-
-Demonstrates audio playback in mp3 and ogg formats. This is stripped down version of the Simple HTML5 Audio Player from Envato and is mobile-friendly.
