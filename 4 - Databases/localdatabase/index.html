@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html manifest="default.manifest">
+
+<head>
+	<title>Dark Crimson Blog - Local Database Demo</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>
+	<script src="db_demo.js" type="text/javascript" charset="utf-8"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	 <meta name="apple-mobile-web-app-capable" content="yes" />
+	 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	 <meta name="viewport" content="width=device-width; initial-scale=0.5; maximum-scale=0.6; minimum-scale=0.6; user-scalable=0;" />
+
+    <link rel="stylesheet" href="db_demo.css" type="text/css">
+
+</head>
+
+<body>
+<div id="wrapper">
+<h1>Local Database Demo</h1>
+
+<h3 id="greeting"></h3>
+		<form>
+			<fieldset>
+			<legend>Customize Your Experience</legend>
+			
+			<table>
+				<tr>
+					<td>
+						<label for="fname">Your Name:</label>
+					</td>
+					<td>	
+						<input type="fname" id="fname" /> 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="bg_color">Background:</label>
+					</td>
+					<td>	
+						<select id="bg_color">
+						
+  							<option value="#B3B4EF">Periwinkle</option>
+  							<option value="#DFB90D">Gold</option>
+  							<option value="#B2BEB5">Ash</option>
+  							<option value="#74BF3B">Green Apple</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="font_selection">Favorite Font:</label>
+					</td>
+					<td>	
+						<select id="font_selection">
+							<option value="Helvetica">Helvetica</option>
+							<option value="Georgia">Georgia</option>
+							<option value="Times">Times</option>
+							<option value="Lucida Sans">Lucidia Sans</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="fav_car">Favorite Car:</label>
+					</td>
+					<td>	
+						<select id="fav_car">
+  							<option value="Porsche 911 Turbo">Porsche 911 GT3</option>
+  							<option value="Audi R8 V10">Audi R8 V10</option>
+  							<option value="BMW M3 CSL">BMW M3 CSL</option>
+  							<option value="Broke-Ass Huffy">Broke-Ass Huffy</option>
+						</select>	
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2">
+						<input type="button" id="update" value="Update Your Preferences" />
+					</td>
+				</tr>
+			</table>
+
+	
+
+		<br/>
+
+		
+	<div id="content">
+
+	</div>
+
+		</fieldset>
+		</form>
+		
+		
+		<a href="javascript:void(0)" id="clear">→ Clear Preferences ←</a>
+		
+		<p id="instructions">When your prefereces are updated they are stored in a local database. The data is stored until either use the "clear preferences" or manually remove it and is only accesable within the scope of this page. You can manually view the data / databse by clicking <em>Develop > Show Web Inspector > Databases tab</em>.</p>
+</div>
+
+<div id="footer">
+	<div>
+		<p>
+		Written by: <a href="http://darkcrimson.com" target="_blank">Ben Lister</a> for tutorial: <a href="http://blog.darkcrimson.com/2010/05/local-databases/" target="_blank">&#147;Getting Started with HTML5 Local Databases&#148;</a>. Last revised: 2010 May 12
+		</p>
+	<br />
+<p>This page and its related files are <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">Licensed under the MIT License</a></p>	
+
+	<p><a href="http://twitter.com/bahnburner" target="_blank">Follow me on Twitter</a> | <a href="http://blog.darkcrimson.com/samples/localdb/darkcrimson_localdb_demo.zip">Download Source</a>
+		</p>	
+	</div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-818084-5");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
