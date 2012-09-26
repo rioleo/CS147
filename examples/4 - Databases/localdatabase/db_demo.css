@@ -1,0 +1,133 @@
+/*
+Main CSS for tutorial: "Getting Started with HTML5 Local Databases"
+Written by Ben Lister (darkcrimson.com) revised 28 May 2010
+Tutorial: http://blog.darkcrimson.com/2010/05/local-databases/
+
+Licensed under the MIT License:
+http://www.opensource.org/licenses/mit-license.php
+*/
+
+
+
+/* Global reset */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, cite, code, em, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+body { line-height: 1em;  font-family: Helvetica, Arial,  sans-serif; font-size: 62.5%; }	
+ol, ul { list-style: none }
+
+a { color: #000; text-decoration: none; border-bottom: 1px dotted rgba(0,0,0,0.3); }
+
+body { font-size: 1em;}
+
+strong { font-weight: bold }
+em { font-style: italic }
+
+
+
+/* Demo Styles */
+
+h1 { 
+	font-size: 2.3em; 
+	margin: 10px 0; 
+	line-height:1em;
+	color: #5e5e5e;
+	font-weight: bold;
+	line-height: 30px;
+	text-shadow:1px 1px 1px rgba(255, 255, 255, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.9)
+}
+
+h3#greeting {
+	color: #000;
+	font-size: 1.2em;
+	margin: 40px 0 20px 0;
+	font-style: italic;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(207,207,207,0.);
+	text-align: left;
+}
+h4#your_car {
+	padding: 10px;
+	background: rgba(0,0,0,0.4);
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	
+}
+
+#wrapper {
+	width: 550px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+	#wrapper table { margin: 0 auto; }
+		#wrapper form { margin-bottom: 30px}
+		#wrapper table tr td { height: 30px; vertical-align: top }
+	
+		#wrapper fieldset { 
+			border: 1px dotted #000; 
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			width: 90%;
+			margin: 0 auto;
+		}
+	
+	#wrapper form legend {
+		font-size: 1.3em;
+		padding: 20px 0;
+	}
+	#wrapper form input#fname { 
+		width: 200px;
+		font-size: 1.2em;
+		border: 1px solid #000;
+	}
+	
+	#wrapper #update { margin-top:  20px}
+	#wrapper label { font-size: 1.1em; text-align: right; margin-right: 10px;}	
+	#wrapper select { width: 200px; }
+	#wrapper table tr td { vertical-align: top; }
+		
+		#wrapper table tr td:nth-child(odd) { text-align: right }
+		#wrapper table tr td:last-child { text-align: center }
+		
+	
+	p#instructions {
+		margin: 30px auto;
+		width: 90%;
+		line-height: 1.5em;
+		text-align: justify;
+	}
+	
+
+/* Bottom Footer*/
+#footer {
+	clear: both;
+	padding: 20px 10px;
+	background: rgba(0,0,0,0.9);
+	height: 90px;
+	color: #fff;
+	text-shadow:2px 1px 1px rgba(223, 223, 223, 0.4);
+	font-size: 0.8em;
+	letter-spacing: 0.02em;
+	min-width:550px;
+	overflow: hidden;
+}		
+	#footer a {
+		color: #EFEFEF;
+		text-decoration: none;
+		border-bottom: 1px dotted rgba(223, 223, 223, 0.2);
+	}
+		#footer a:hover { color: #f26d02 }
+	#footer div {
+		width: 550px;
+		margin: 5px auto;
+		text-align: center;
+	}
+	#footer div p { width: 90% }	
+	
+	#footer div p:last-child { margin-top: 10px }
+	

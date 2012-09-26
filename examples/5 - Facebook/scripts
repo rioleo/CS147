@@ -1,0 +1,11 @@
+<script>
+$("#twitter").click(function() {
+	
+	window.open("<?php echo $twitterObj->getAuthorizationUrl(); ?>", "");
+});
+$("#facebook").click(function() {
+	
+	window.open("https://graph.facebook.com/oauth/authorize?type=web_server&scope=read_stream&client_id=226220960740488&redirect_uri=http%3A%2F%2Fwww.filterous.com%2Fpost.php", "");
+	
+});
+</script>
