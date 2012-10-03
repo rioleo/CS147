@@ -33,7 +33,7 @@
 			margin:0 auto;
 			padding:10px;
 			background:#333;
-			width:180px;
+			width:190px;
 			color:#fff;
 			height:20px;
 		     -moz-border-radius: 20px;
@@ -43,6 +43,7 @@
 		    text-align:center;
 		}
 		#timer {
+			width:70px;
 			float:right;
 			margin-right:10px;
 		}
