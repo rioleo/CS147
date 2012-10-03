@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyApp</title>
+	    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="apple-touch-icon" href="appicon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-webapp-status-bar-style" content="grey" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+	</head>
+	
+	<style type="text/css">
+		body {
+			background:#eee;
+			font-family: Helvetica, Arial, sans-serif;
+		}
+		h2 {
+			font-size:22px;
+			font-weight:300;
+			color:#aaa;
+		}
+		.button {
+			background:#333;
+			width:100px;
+			color:#fff;
+			height:20px;
+		     -moz-border-radius: 20px;
+		    -webkit-border-radius: 20px;
+		    -khtml-border-radius: 20px;
+		    border-radius: 20px;
+		    text-align:center;
+		}
+		.opacity {
+			opacity:0.4;
+		}
+		.area {
+			width:100%;
+			float:left;
+			clear:both;
+			padding:10px;
+		}
+		.box {
+			width:100px;
+			float:left;
+			height:100px;
+			border:1px solid #aaa;
+		}
+		.box1 {
+			background:#1E3F6E;
+		}
+		.box2 {
+			background:#1E5B6E;
+		}
+	</style>
+	<body>
+	 		<h2>Rio Akasaka</h2>
+		<div id='bio'>Crime-solver. Noir detective extraordinaire.</div>
+	 
+	 	<h3>Assignments</h3>
+		<ul id='assignments'>
+			<li>Go undercover</li>
+			<li>Learn HTML</li>
+		</ul>
+		
+		<h3>A nice button</h3>
+		<div class="button">Click me</div>
+		
+		<h3>Two boxes side by side</h3>
+		<div class="area">
+			<div class="box box1"></div>
+			<div class="box box2"></div>
+		</div>
+		
+		<h3>An invisible seal</h3>
+		<p><img width="50" class="opacity" src="seal.png" /></p>
+		
+		<h3>A video</h3>
+		<video width="300" height="240" controls="controls">
+		  <source src="gizmo.mp4" type="video/mp4" />
+		</video>
+	 
+	</body>
+</html>
