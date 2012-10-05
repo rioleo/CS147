@@ -1,0 +1,51 @@
+.box {
+	background:#eee;
+	padding:10px;
+	margin:0px;
+	float:left;
+	width:300px;
+}
+.left {
+	width:130px;
+	float:left;
+	color:#ccc;
+	margin:5px;
+	font-size:70px;
+	text-align:center;
+	border:4px solid #aaa;
+	height:80px;
+}
+#button {
+	width:150px;
+	border:5px solid #aaa;
+	display:block;
+	background:#ccc url('play3.png') no-repeat right;
+	padding:10px;
+	margin:0 auto;
+	text-align:center;
+	font-size:30px;
+	font-weight:100;
+	font-family:'HelveticaNeue-Light' !important;
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+}
+.h {
+		font-family:'HelveticaNeue-Light' !important;
+}
+body{margin:0;padding:0;font-family:helvetica,arial,sans serif}
+#sphere{}
+body {
+    background: #1D2329;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+    background-image:  -khtml-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+    background-image:         linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+    background-position: 40% 50%;
+    background-size: 2px 2px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+}
