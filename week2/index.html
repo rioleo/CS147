@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		
 		<link href="style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -30,11 +31,43 @@
 
 		<!-- Let's put in a timer here -->
 		<script type="text/javascript">
+		var count = 30;
+		var counter = setInterval(timer, 1000); 
+
+		function timer() {
+		    count = count - 1;
+		    if (count <= 0) {
+		        clearInterval(counter);
+		        alert("Boom!");
+		        document.getElementById('button').style.visibility = 'hidden';
+		        return;
+		    }
+
+		    document.getElementById("timer").innerHTML = count + " secs";
+		}
 
 		</script>
 		
 		<!-- Let's put in the geolocation stuff here -->
 		<script type="text/javascript">
+		$(function () {
+		    $("#button").click(function () {
+		        getLocation();
+		    });
+		});
+
+		function getLocation() {
+		    if (navigator.geolocation) {
+		       navigator.geolocation.getCurrentPosition(showPosition);
+		    } else {
+		        alert("Geolocation is not supported by this browser.");
+		    }
+		}
+
+		function showPosition(position) {
+		    alert(position.coords.latitude);
+		    alert(position.coords.longitude);
+		}
 		
 		</script>
 	</body>
