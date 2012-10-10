@@ -80,6 +80,8 @@ function HelloWorld4() {
 	// Split a string and create an array
 	// Then piece it back together
 	$string  = "Hello World";
+	
+	// This is now an array
 	$pieces = explode(" ", $string);
 	echo $pieces[0]." ".$pieces[1];
 }
