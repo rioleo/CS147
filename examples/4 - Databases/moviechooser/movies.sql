@@ -1,38 +1,16 @@
--- phpMyAdmin SQL Dump
--- version 3.2.5deb2~sbp50+1
--- http://www.phpmyadmin.net
---
--- Host: tools.stanford.edu
--- Generation Time: Nov 03, 2011 at 04:48 PM
--- Server version: 5.1.49
--- PHP Version: 5.2.6-1+lenny13
-
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Database: `g_westcenter_teaching`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `movies`
---
-
 CREATE TABLE IF NOT EXISTS `movies` (
   `img` varchar(1000) NOT NULL,
   `title` varchar(1000) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `movies`
---
+
+CREATE TABLE IF NOT EXISTS `flicked` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `img` varchar(1000) NOT NULL,
+  `seen` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=414 ;
+
 
 INSERT INTO `movies` (`img`, `title`) VALUES
 ('http://cdn-0.nflximg.com/en_us/boxshots/large/70166101.jpg', 'Zorro: Season 1'),
