@@ -1,0 +1,37 @@
+body {
+	background:#1a1a1a;	
+	font-family:Helvetica Neue, Helvetica, sans-serif;
+}
+a, p {
+	color:#fff;
+}
+.banner {
+	background: url("banner.png") no-repeat;
+	width:320px;
+	height:58px;
+}
+.box {
+	width:80px;
+	height:80px;
+	background:#eee;
+	font-family:Helvetica Neue, Helvetica, sans-serif;
+	border:1px solid #aaa;
+	font-weight:300;
+	float:left;
+	font-size:50px;
+	padding:5px;
+	text-align:center;
+}
+.tictac {
+	float:left;
+	clear:both;
+}
+.row {
+	float:left;
+	clear:both;
+}
+.s {
+	padding:10px;
+	clear:both;
+	float:left;
+}

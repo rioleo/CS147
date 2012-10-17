@@ -1,33 +1,22 @@
-<script src="jquery.1.4.1.min.js" type="text/javascript"></script> 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tic Tac Toe for CS147</title>
+		<link rel="apple-touch-icon" href="appicon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="./github-buttons/gh-buttons.css"> 
 
-<style type="text/css">
-.box {
-	width:80px;
-	height:80px;
-	background:#eee;
-	font-family:Helvetica Neue, Helvetica, sans-serif;
-	border:1px solid #aaa;
-	font-weight:300;
-	float:left;
-	font-size:50px;
-	padding:5px;
-	text-align:center;
-}
-.tictac {
-	float:left;
-	clear:both;
-}
-.row {
-	float:left;
-	clear:both;
-}
-.s {
-	padding:10px;
-	clear:both;
-	float:left;
-}
-</style>
+	</head>
+
 <body>
+
+<div class="banner"></div>
+
 <p>Your opponent should be using <a href="http://stanford.edu/~rakasaka/cgi-bin/cs147/tictactoe/play.php?game=<?=$_GET["game"]?>&player=<?=$_GET["against"]?>&against=<?=$_GET["player"]?>&ch=<?php if ($_GET["ch"] == 'o') { 
 echo "x"; } else { echo "o"; } ?>">this URL</a></p>
 <div class="tictac">
@@ -48,7 +37,12 @@ echo "x"; } else { echo "o"; } ?>">this URL</a></p>
 	</div>
 </div>
 
-<div class="s"><input type="button" id="clear" value="Clear this game" /><input type="button" id="random" value="Give me a random game" /></div>
+<div class="s">
+	
+	<a class="button danger icon trash" id="clear">Clear this game</a>
+	<a class="button icon loop" id="random">Random game</a>
+
+</div>
 
 <script type="text/javascript">
 	// What happens when you click on a box?
@@ -84,3 +78,4 @@ echo "x"; } else { echo "o"; } ?>">this URL</a></p>
 	t=setTimeout("timedCount()",1000);
 </script>
 </body>
+</html>
