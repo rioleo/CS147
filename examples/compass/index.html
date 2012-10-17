@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyApp</title>
+		<link rel="apple-touch-icon" href="appicon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+		<style>
+		body {
+			width:320px;
+			margin:0;
+			padding:0;
+			background:url("background.png") no-repeat;
+		}
+		.center {
+			
+			margin:0 auto;
+			margin-top:40px;
+			width:230px;
+		}
+		.orientation {
+			text-align:center;
+			font-size:40px;
+			font-family:'HelveticaNeue-Light';
+
+		}
+		.box {
+			padding:10px;
+			background:#000;
+			opacity:0.5;
+			color:#fff;
+		}
+		</style>
+	</head>
+
+	<body>
+	
+		
+
+			
+				<div class="box box1"><div class="orientation"></div></div>
+				<div class="center"><img src="compass3.png" class="r" /></div>
+	
+
+	
+
+		<script type="text/javascript">
+		window.addEventListener('deviceorientation', function(e) {
+		    $(".orientation").html(e.webkitCompassHeading.toFixed(2));
+		    var o = (360-e.webkitCompassHeading);
+		    $(".r").css("-webkit-transform", "rotate("+o+"deg)");
+		}, false);
+		</script>
+	</body>
+</html>

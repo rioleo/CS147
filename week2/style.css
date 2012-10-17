@@ -55,20 +55,28 @@
 		.box {
 			width:100px;
 			float:right;
+<<<<<<< HEAD
 			padding:10px;
+=======
+			padding:0px;
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 			color:#fff;
 			height:50px;
-			margin:10px;
+			margin:20px;
+			background:#fff;
 			border:3px solid #4889a3;
 		}
 		.box1 {
 			background:#1E3F6E;
 		}
+		.box1 {
+			background:#000;
+		}
 		.box2 {
 			background:#1E5B6E;
 		}
 		.blue {
-		  color:#ffffff;
+		  	color:#ffffff;
 		}
 		.blue {
 		 	color:#003399;

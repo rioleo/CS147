@@ -1,7 +1,25 @@
-CS147
+Introduction to Human Computer Interaction: CS147
 =====
 
-This is the repository for content for CS147, Fall 2012.
+This is the repository for content for CS147, Introduction to Human Computer Interaction, Fall 2012, offered at Stanford. This is the technical lab component material taught by Rio Akasaka.
+
+Course Material
+---------------------
+
+* Week 1
+
+Covering the basics of HTML and CSS, with a couple elements of HTML5 and CSS3 sprinkled throughout.
+
+* Week 2
+
+Covering the basics of JavaScript and jQuery, with a simple JavaScript timer and geolocation script, and jQuery to append and fade in DOM objects. A web app called DeadDrop is the final product.
+
+* Week 3
+
+Covering the fundamentals of PHP and MySQL, with a webstore web app called "Maya" as the final product. Integrates emailing users.
+
+Example Material
+---------------------
 
 * 1 - Forms
 

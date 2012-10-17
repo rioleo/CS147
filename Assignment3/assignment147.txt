@@ -1,0 +1,6 @@
+name space = space of all possible values of names, addressing something
+	diskblocks are uint16s, name mapping algo is disk_img read sector
+	in this case the 
+	
+
+https://stanford.coursera.org/hci-2012-fall/human_grading/view_app/courses/480/assessments/15/submissions/616
