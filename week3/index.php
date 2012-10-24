@@ -18,6 +18,7 @@
 		<table>
 		<?php
 		include("config.php");
+<<<<<<< HEAD
 		$query = "select * from books";
 		
 		$result = mysql_query($query);
@@ -25,7 +26,18 @@
 			echo "<p>".$row["title"];."</p>"
 		}
 		?>
+=======
+		$query = "";
+>>>>>>> b3dacea09ff430bf4988b594f3098ed8216df35c
 		
+		// Don’t be intimidated by the following lines. You can pretty much
+		// always copy and paste these because they’re sort of like
+		// functional bits that never change.
+		$result = mysql_query($query);
+		while ($row = mysql_fetch_assoc($result)) {
+			echo "<p>".$row["title"]."</p>";
+		}
+		?>
 		</table>
 		
 		<script type="text/javascript">
