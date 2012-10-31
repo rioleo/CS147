@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<title>Example</title> 
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="jquery.mobile-1.2.0.css" />
+
+	<link rel="stylesheet" href="style.css" />
+	<link rel="apple-touch-icon" href="appicon.png" />
+	<link rel="apple-touch-startup-image" href="upstart.png">
+
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile-1.2.0.js"></script>
+
+	<link rel="stylesheet" href="jquery.mobile-1.2.0.css" />
+</head> 
+
+
+<style>
+.b {
+	display:none;
+}
+</style>
+<script type="text/javascript">
+$(function() {
+	$(".a").click(function() {
+		$(".b").hide();
+		$("#b" + $(this).attr("id")).show();
+	});
+});
+</script>
+</head>
+
+<body>
+<div data-role="page" id="filter">
+
+	<div data-role="header">
+		<h1>Example</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">	
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#" class="a" id="1" data-role="button">Yes</a>
+			<a href="#" class="a" id="2" data-role="button">No</a>
+			<a href="#" class="a" id="3" data-role="button">Maybe</a>
+		</div>
+		<div class="b" id="b1">This content gets shown when the user hits Yes</div>
+		<div class="b" id="b2">This content gets shown when the user hits No</div>
+		<div class="b" id="b3">This content gets shown when the user hits Maybe</div>
+		
+	</div>
+	<div data-role="footer" data-id="samebar" class="nav-glyphish-example" data-position="fixed" data-tap-toggle="false">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+		<ul>
+			<li><a href="#" id="home" data-icon="custom">Home</a></li>
+			<li><a href="#" id="key" data-icon="custom">Login</a></li>
+			<li><a href="#" id="map" class="ui-btn-active" data-icon="custom">Map</a></li>
+			
+		</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
