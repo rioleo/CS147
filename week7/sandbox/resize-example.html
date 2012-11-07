@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<title>Resized iFrame Example</title> 
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.css" />
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="apple-touch-icon" href="appicon.png" />
+	<link rel="apple-touch-startup-image" href="startup.png">
+
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.js"></script>
+	
+	<script type="text/javascript">
+	$(function(){
+	    myScroll = new iScroll('iscroll');
+	/*
+	    $('#dynFrame').load(function(){
+	        alert($(this).innerHeight());
+	    });
+	*/
+	    $('.frmSubmit').click(function(e){
+	        $('#dynFrame').attr('src', $('.frmUrlVal').attr('value'));
+	        e.preventDefault();
+	        return false;
+	    });
+	    document.addEventListener('touchmove', function(e){ e.preventDefault(); });
+	});
+	</script>
+	<script src="http://cubiq.org/dropbox/iscroll4/src/iscroll.js"></script>      
+
+	<style type="text/css">
+	#iscroll{
+	    height: 2000px;
+	    width: 320px;
+	    position:absolute; z-index:1000;
+	    background:#aaa;
+	    overflow:auto;
+	}
+	#iscroll #scroller{
+	    position: relative;
+	}
+	#iscroll iframe{
+	    z-index:1;
+	    border:0px;
+	    width: 320px;
+	    height: 5000px;
+	    overflow:hidden;
+	}
+	#iscroll .dragger{
+	    position: absolute;
+	    top:0px;
+	    left:0px;
+	    height:5000px;
+	    width:320px;
+	    /*background:#00f;*/
+	}
+	
+	​</style>
+​
+</head>
+
+<body>
+<div data-role="page" id="filter">
+
+	<div data-role="header">
+		<h1>iFrame!</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content" style="padding:0">	
+	
+	  <form style="padding:10px;">
+        <input type="text" class="frmUrlVal" style="margin-right:10px;width:196px !important;float:left" autocapitalize="off">
+        <input type="submit" data-role="button"  data-inline="true" class="frmSubmit" value="Go">
+      </form>
+		<div id="iscroll">
+		    <div id="scroller">
+		        <div class="dragger"></div>
+		      <iframe src="http://touch.latimes.com/#section/718/article/p2p-73181894/" id="dynFrame"></iframe>
+		    </div>    
+		</div>
+		
+		
+	</div>
+	<div data-role="footer" data-id="samebar" class="nav-glyphish-example" data-position="fixed" data-tap-toggle="false">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+		<ul>
+			<li><a href="#" id="home" data-icon="custom">These</a></li>
+			<li><a href="#" id="key" class="ui-btn-active" data-icon="custom">Do Not</a></li>
+			<li><a href="#" id="map"  data-icon="custom">Work</a></li>
+			
+		</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
