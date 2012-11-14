@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<title>Sandbox</title> 
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="jquery.mobile-1.2.0.css" />
+
+	<link rel="stylesheet" href="style.css" />
+	<link rel="apple-touch-icon" href="appicon.png" />
+	<link rel="apple-touch-startup-image" href="upstart.png">
+
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile-1.2.0.js"></script>
+
+	<link rel="stylesheet" href="jquery.mobile-1.2.0.css" />
+</head> 
+
+
+<script type="text/javascript">
+$(function() {
+	x = localStorage.getItem('username');
+	$(".username").html(x);
+	
+	$("#yes").click(function() {
+		localStorage.setItem('username', "Rio");
+		alert('Success');
+	});
+	$("#no").click(function() {
+		x = localStorage.getItem('username');
+		alert(x);
+	});
+	$("#maybe").click(function() {
+		localStorage.removeItem('username');
+		alert('Removed');
+	});
+});
+</script>
+</head>
+
+<body>
+<div data-role="page" id="filter">
+
+	<div data-role="header">
+		<h1>Sanbox</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<div class="username"></div>	
+		<a href="#" id="yes" data-role="button">Set</a>
+		<a href="#" id="no" data-role="button">Get</a>
+		<a href="#" id="maybe" data-role="button">Clear</a>
+		
+	</div>
+	<div data-role="footer" data-id="samebar" class="nav-glyphish-example" data-position="fixed" data-tap-toggle="false">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+		<ul>
+			<li><a href="#" id="home" data-icon="custom">Home</a></li>
+			<li><a href="#" id="key" data-icon="custom">Login</a></li>
+			<li><a href="#" id="map" class="ui-btn-active" data-icon="custom">Map</a></li>
+			
+		</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

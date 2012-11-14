@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Walkcast App</title>
+
+	<link rel="apple-touch-icon-precomposed" href="appicon.png" />
+	<link rel="apple-touch-startup-image" href="startup.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<link rel="stylesheet" href="style2.css" type="text/css" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="content">
+<img src="logo.png" width="320" />
+<div id="sphere"></div>
+<div class="box">
+<p class="h">Walkcast plays your podcasts... but only if you're moving around. Every step you make gives you 2 seconds of playback.</p>
+<div class="left"><span id="status">0</span></div>
+<div class="left"><span id="remaining">10</span></div></div>
+
+
+<div class='thumb audio'><audio id='player' src='marketplace.mp3'></audio></div>
+
+<a id="button" title="button">Play</a>
+
+</div>
+
+<script type="text/javascript">
+var x = 0,
+    y = 0,
+    vx = 0,
+    vy = 0,
+    ax = 0,
+    ay = 0;
+var sphere = document.getElementById("sphere");
+if (window.DeviceMotionEvent != undefined) {
+    window.ondevicemotion = function (e) {
+        ax = event.accelerationIncludingGravity.x * 1;
+        ay = event.accelerationIncludingGravity.y * 1;
+
+    }
+    setInterval(function () {
+        var landscapeOrientation = window.innerWidth / window.innerHeight > 1;
+        if (landscapeOrientation) {
+            vx = vx + ay;
+            vy = vy + ax;
+        } else {
+            vy = vy - ay;
+            vx = vx + ax;
+        }
+        vx = vx * 0.98;
+        vy = vy * 0.98;
+        y = parseInt(y + vy / 50);
+        x = parseInt(x + vx / 50);
+        boundingBoxCheck();
+        sphere.style.top = y + "px";
+        sphere.style.left = x + "px";
+    }, 25);
+}
+var remaining = 10;
+var count = 0;
+var counter; 
+
+function timer() {
+    remaining = remaining - 1;
+         	$("#remaining").html(remaining);
+
+	 if (remaining <= 0) {
+	        clearInterval(counter);
+	        document.getElementById('player').pause();
+            playing = false;
+            $('a#button').text("Paused");
+	 }   
+}
+
+function boundingBoxCheck() {
+    if (x < 0) {
+        x = 0;
+        vx = -vx;
+    }
+    if (y < 0) {
+        y = 0;
+        remaining++;
+        vy = -vy;
+    }
+    if (x > document.documentElement.clientWidth - 20) {
+        x = document.documentElement.clientWidth - 20;
+        vx = -vx;
+    }
+    if (y > document.documentElement.clientHeight - 20) {
+        y = document.documentElement.clientHeight - 20;
+        vy = -vy;
+		
+	    count++;
+	    $("#status").html(count);
+	    if (playing) {
+	     	remaining = remaining + 2;   
+	     	$("#remaining").html(remaining);
+		}
+    }
+}
+
+    var playing = false;
+    $('a#button').click(function() {
+        $(this).toggleClass("down");
+
+        if (playing == false) {
+            document.getElementById('player').play();
+            playing = true;
+            remaining = 10;
+            $(this).text("Pause");
+            clearInterval(counter);
+			counter = setInterval(timer, 1000); 
+
+        } else {
+            document.getElementById('player').pause();
+            playing = false;
+            clearInterval(counter);
+            count = 0;
+            $(this).text("Play");
+        }
+    });
+</script>
+</body>
+</html>

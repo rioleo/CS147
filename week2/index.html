@@ -9,10 +9,13 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		
 		<link href="style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	</head>
 
 	<body>
-			<!-- This is the top bit with the image. 
+	<style>
+	
+	</style>		<!-- This is the top bit with the image. 
 		I wonder why there's no image tag here? -->
 		<div class="whitebit"></div>
 
@@ -22,7 +25,7 @@
 			<div id="button">Refresh GPS: <div id="timer"></div></div>
 
 			<div class="area">
-				<div class="box box1"><div class="latitude"></div></div>
+				<div class="box box1"><div class="latitude">Blah</div></div>
 				<div class="box box2"><div class="longitude"></div></div>
 			</div>
 
@@ -30,12 +33,45 @@
 
 		<!-- Let's put in a timer here -->
 		<script type="text/javascript">
+		var count = 30;
+		var counter = setInterval(timer, 1000); 
+		
+		function timer() {
+		    count = count - 1;
+		    if (count <= 0) {
+		        clearInterval(counter);
+		        alert("Boom!");
+		        document.getElementById('button').style.visibility = 'hidden';
+		        return;
+		    }
+		
+		    document.getElementById("timer").innerHTML = count + " secs";
+		}
 
 		</script>
 		
 		<!-- Let's put in the geolocation stuff here -->
 		<script type="text/javascript">
-		
+		$(function () {
+    $("#button").click(function () {
+        getLocation();
+    });
+});
+
+function getLocation() {
+    if (navigator.geolocation) {
+       navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position) {
+    $(".box1").html(position.coords.latitude);
+    $(".box2").html(position.coords.longitude);
+} 
+
+getLocation();
 		</script>
 	</body>
 </html>
