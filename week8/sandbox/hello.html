@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<title>MappityMap</title> 
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="apple-touch-icon" href="appicon.png" />
+	<link rel="apple-touch-startup-image" href="startup.png">
+
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.js"></script>
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.css" />
+	
+</head>
+
+<body>
+<div data-role="page" class="filter">
+	<style type="text/css">
+		#popupPanel-popup {
+	    right: 0 !important;
+	    left: auto !important;
+		}
+		#popupPanel {
+		    width: 200px;
+		    border: 1px solid #000;
+		    border-right: none;
+		    background: rgba(0,0,0,.5);
+		    margin: -1px 0;
+		}
+		#helper {
+			position:absolute;
+			color:#fff;
+			top:70px;
+			left:20px;
+		}
+		#popupPanel .ui-btn {
+		    margin: 2em 15px;
+		}
+	</style>
+	<div data-role="header">
+		<h1>Map!</h1>
+		<a href="index.html" data-icon="gear" class="ui-btn-right">Options</a>
+
+	</div><!-- /header -->
+	
+	<div data-role="content" style="padding:0">	
+			
+		
+		<div style="padding-left:10px;padding-right:10px;">
+			<p>Enter a search location below.</p>
+			<form id="blankenter" action="index.php">
+				<input type="text" name="startingpoint" id="startingpoint" />
+			</form>
+		</div>
+		
+			
+		<script type="text/javascript">	
+		
+		$(document).unbind('pageshow');
+		$(document).bind('pageshow', function(event){ 
+			$( "#popupPanel" ).on({
+		    popupbeforeposition: function() {
+		        var h = $( window ).height();
+		
+		        $( "#popupPanel" ).css( "height", h );
+		    }
+			});
+		});
+		</script> 
+
+		
+		
+	
+	<a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window" data-role="button">Open panel</a>
+					
+	</div>
+	<div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
+	
+	    <button data-theme="a" data-icon="back" data-mini="true">Back</button>
+	    <button data-theme="a" data-icon="grid" data-mini="true">Menu</button>
+	    <button data-theme="a" data-icon="search" data-mini="true">Search</button>
+		 
+	</div>
+	<div data-role="footer" data-id="samebar" class="nav-glyphish-example" data-position="fixed" data-tap-toggle="false">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+		<ul>
+			<li><a href="overlay.html" id="home" data-icon="custom">Overlay</a></li>
+			<li><a href="hello.html" id="key" class="ui-btn-active" data-icon="custom">Hello</a></li>
+			<li><a href="index.php" id="map"  data-icon="custom">Map</a></li>
+			
+		</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

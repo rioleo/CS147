@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html manifest="chorded.manifest">
+
+<head>
+	<title>Chorded Keypad</title> 
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="apple-touch-icon" href="appicon.png" />
+	<link rel="apple-touch-startup-image" href="startup.png">
+
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="chorded.js"></script>
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.css" />
+	
+</head>
+
+<body>
+	<canvas id="content"></canvas>
+	<div id="key"></div>
+	<div id="space">space</div>
+	<div id="clear">clear</div>
+	<div id="backspace">delete</div>
+	<div class="chorded">
+		<div class="a box 0" id="16"></div>
+		<div class="b box 1" id="8"></div>
+		<div class="c box 2" id="4"></div>
+		<div class="d box 3" id="2"></div>
+		<div class="e box 4" id="1"></div>
+	</div>
+
+<audio id="myAudio">
+<source src="click.mp3" type="audio/mpeg" />
+</audio>
+</body>
+</html>
