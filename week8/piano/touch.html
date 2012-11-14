@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Piano</title>
+    <meta name="viewport" content="user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link href="css/ui-darkness/jquery-ui-1.9.1.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.8.2.js"></script>
+	<script src="js/jquery-ui-1.9.1.custom.js"></script>
+    <script type="text/javascript" src="touch.js"></script>
+    
+    <script type="text/javascript" src="jquery.ui.touch-punch.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="touch.css" />
+    <link rel="apple-touch-icon" href="appicon.png" />
+	<link rel="apple-touch-startup-image" href="startup.png">
+
+  </head>
+  <body>
+
+   <ul class="toolbar2">
+    
+      <li>
+	      <a href="#" id="start">Start</a>
+	      <a href="#" id="clear">Clear</a>
+      </li>
+      <div id="tempo"></div>
+      
+    </ul>
+    
+		<canvas id="content"></canvas>
+		<canvas id="content2"></canvas>
+		<canvas id="content3"></canvas>
+		<canvas id="content4"></canvas>
+		<canvas id="content5"></canvas>
+		<canvas id="content6"></canvas>
+		<canvas id="content7"></canvas>
+		<canvas id="content8"></canvas>
+
+
+    <ul class="toolbar">
+    
+      <li>
+	      <a href="#" id="major">Major</a>
+	      <a href="#" id="minor">Minor</a>
+	      <a href="#" id="guitar">Guitar</a>
+	      <a href="#" id="piano">Piano</a>
+	      <a href="#" id="violin">Violin</a>
+	      <a href="#" id="sticky">Sticky</a>
+      </li>
+    </ul>
+    
+  <div id="barsarea">
+    <div class="bars"">
+        <div class="1 bar0 bar"></div>
+        <div class="1 bar1 bar"></div>
+        <div class="1 bar2 bar"></div>
+        <div class="1 bar3 bar"></div>
+        <div class="1 bar4 bar"></div>
+        <div class="1 bar5 bar"></div>
+        <div class="1 bar6 bar"></div>
+        <div class="1 bar7 bar"></div>
+        <div class="1 bar8 bar"></div>
+        <div class="1 bar9 bar"></div>
+       
+    </div>
+     <div class="bars">
+        <div class="2 bar0 bar"></div>
+        <div class="2 bar1 bar"></div>
+        <div class="2 bar2 bar"></div>
+        <div class="2 bar3 bar"></div>
+        <div class="2 bar4 bar"></div>
+        <div class="2 bar5 bar"></div>
+        <div class="2 bar6 bar"></div>
+        <div class="2 bar7 bar"></div>
+        <div class="2 bar8 bar"></div>
+        <div class="2 bar9 bar"></div>
+       
+    </div>
+    
+     <div class="bars">
+        <div class="3 bar0 bar"></div>
+        <div class="3 bar1 bar"></div>
+        <div class="3 bar2 bar"></div>
+        <div class="3 bar3 bar"></div>
+        <div class="3 bar4 bar"></div>
+        <div class="3 bar5 bar"></div>
+        <div class="3 bar6 bar"></div>
+        <div class="3 bar7 bar"></div>
+        <div class="3 bar8 bar"></div>
+        <div class="3 bar9 bar"></div>
+       
+    </div>
+    <div class="bars">
+        <div class="4 bar0 bar"></div>
+        <div class="4 bar1 bar"></div>
+        <div class="4 bar2 bar"></div>
+        <div class="4 bar3 bar"></div>
+        <div class="4 bar4 bar"></div>
+        <div class="4 bar5 bar"></div>
+        <div class="4 bar6 bar"></div>
+        <div class="4 bar7 bar"></div>
+        <div class="4 bar8 bar"></div>
+        <div class="4 bar9 bar"></div>
+       
+    </div>
+    <div class="bars">
+        <div class="5 bar0 bar"></div>
+        <div class="5 bar1 bar"></div>
+        <div class="5 bar2 bar"></div>
+        <div class="5 bar3 bar"></div>
+        <div class="5 bar4 bar"></div>
+        <div class="5 bar5 bar"></div>
+        <div class="5 bar6 bar"></div>
+        <div class="5 bar7 bar"></div>
+        <div class="5 bar8 bar"></div>
+        <div class="5 bar9 bar"></div>
+       
+    </div>
+  
+     <div class="bars">
+        <div class="6 bar0 bar"></div>
+        <div class="6 bar1 bar"></div>
+        <div class="6 bar2 bar"></div>
+        <div class="6 bar3 bar"></div>
+        <div class="6 bar4 bar"></div>
+        <div class="6 bar5 bar"></div>
+        <div class="6 bar6 bar"></div>
+        <div class="6 bar7 bar"></div>
+        <div class="6 bar8 bar"></div>
+        <div class="6 bar9 bar"></div>
+       
+    </div>
+    
+    <div class="bars">
+        <div class="7 bar0 bar"></div>
+        <div class="7 bar1 bar"></div>
+        <div class="7 bar2 bar"></div>
+        <div class="7 bar3 bar"></div>
+        <div class="7 bar4 bar"></div>
+        <div class="7 bar5 bar"></div>
+        <div class="7 bar6 bar"></div>
+        <div class="7 bar7 bar"></div>
+        <div class="7 bar8 bar"></div>
+        <div class="7 bar9 bar"></div>
+       
+    </div>  
+       
+     <div class="bars">
+        <div class="8 bar0 bar"></div>
+        <div class="8 bar1 bar"></div>
+        <div class="8 bar2 bar"></div>
+        <div class="8 bar3 bar"></div>
+        <div class="8 bar4 bar"></div>
+        <div class="8 bar5 bar"></div>
+        <div class="8 bar6 bar"></div>
+        <div class="8 bar7 bar"></div>
+        <div class="8 bar8 bar"></div>
+        <div class="8 bar9 bar"></div>
+       
+    </div>
+</div>
+    
+    </div>
+  </body>
+</html>
