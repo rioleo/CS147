@@ -35,7 +35,11 @@
 		<script type="text/javascript">
 		var count = 30;
 		var counter = setInterval(timer, 1000); 
+<<<<<<< HEAD
+
+=======
 		
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 		function timer() {
 		    count = count - 1;
 		    if (count <= 0) {
@@ -44,7 +48,11 @@
 		        document.getElementById('button').style.visibility = 'hidden';
 		        return;
 		    }
+<<<<<<< HEAD
+
+=======
 		
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 		    document.getElementById("timer").innerHTML = count + " secs";
 		}
 
@@ -53,6 +61,26 @@
 		<!-- Let's put in the geolocation stuff here -->
 		<script type="text/javascript">
 		$(function () {
+<<<<<<< HEAD
+		    $("#button").click(function () {
+		        getLocation();
+		    });
+		});
+
+		function getLocation() {
+		    if (navigator.geolocation) {
+		       navigator.geolocation.getCurrentPosition(showPosition);
+		    } else {
+		        alert("Geolocation is not supported by this browser.");
+		    }
+		}
+
+		function showPosition(position) {
+		    alert(position.coords.latitude);
+		    alert(position.coords.longitude);
+		}
+		
+=======
     $("#button").click(function () {
         getLocation();
     });
@@ -72,6 +100,7 @@ function showPosition(position) {
 } 
 
 getLocation();
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 		</script>
 	</body>
 </html>

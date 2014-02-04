@@ -55,7 +55,11 @@
 		.box {
 			width:100px;
 			float:right;
+<<<<<<< HEAD
+			padding:10px;
+=======
 			padding:0px;
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 			color:#fff;
 			height:50px;
 			margin:20px;
